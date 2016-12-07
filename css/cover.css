@@ -83,6 +83,7 @@ body {
  .masthead {
    /*background-color: rgba(70, 70, 70, 0.4);*/
    padding-bottom: 5px;
+   height: 25%;
  }
 .masthead-brand {
   margin-top: 10px;
@@ -123,9 +124,15 @@ body {
   }
   .masthead-nav {
     float: right;
+    padding-top: 8px;
   }
 }
-
+.logo {
+  float: left;
+  height: 45%;
+  width: auto;
+  margin-right: 3px;
+}
 
 /*
  * Cover
@@ -167,7 +174,7 @@ body {
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle;
+    padding-top: 15%;
   }
   /* Handle the widths */
   .masthead,
