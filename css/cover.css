@@ -19,10 +19,7 @@ a:hover {
   border: 1px solid #fff;
 }
 
-
-/*
- * Base structure
- */
+/*Base structure*/
 
 html,
 body {
@@ -68,12 +65,23 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-  /*background-color: rgba(70, 70, 70, 0.4);*/
+}
+.start_btn {
+  height: 125px;
 }
 
+.lead {
+  margin-top: 5px !important;
+}
+.btn-cont {
+  padding:0;
+}
 /* Padding for spacing */
 .inner {
   padding: 10px 30px 10px 30px;
+}
+.cover .lead:nth-child(3) {
+  margin-bottom: 3px;
 }
 
 
@@ -81,9 +89,10 @@ body {
  * Header
  */
  .masthead {
-   /*background-color: rgba(70, 70, 70, 0.4);*/
    padding-bottom: 5px;
    height: 25%;
+   font-family: faster;
+   font-size: 1.5em;
  }
 .masthead-brand {
   margin-top: 10px;
@@ -129,7 +138,7 @@ body {
 }
 .logo {
   float: left;
-  height: 45%;
+  height: 40%;
   width: auto;
   margin-right: 3px;
 }
