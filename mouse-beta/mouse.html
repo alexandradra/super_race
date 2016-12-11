@@ -44,7 +44,7 @@
     var canvas = document.querySelector("#myCanvas");
     var context = canvas.getContext("2d");
 
-    //parametre initial de la souris
+//parametre initial de la souris
     var canvasPos = getPosition(canvas);
     var mouseX = 0;
     var mouseY = 0;
@@ -54,6 +54,20 @@
     function setMousePosition(e) {
     mouseX = e.clientX - canvasPos.x;
     mouseY = e.clientY - canvasPos.y;
+}
+
+//lafonction dessine une cercle rouge dans le canvas
+    function update() {
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    context.beginPath();
+    context.arc(mouseX, mouseY, 50, 0, 2 * Math.PI, true);
+    context.fillStyle = "#FF6A6A";
+    context.fill();
+
+    requestAnimationFrame(update);
+
 }
 
 
