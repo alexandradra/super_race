@@ -29,29 +29,36 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  position: relative;
 }
 .full-width-bckgrnd {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  z-index: 1;
+  /*z-index: 0;*/
   display: block;
   background-image:url("../images/circuit_7.jpg");
   background-size:cover;
-  /*filter: blur(2px);*/
-  display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  position: fixed;
+.blur {
+  position: absolute;
   left: 0;
   right: 0;
-  z-index: 9999;
+  filter: blur(2px);
+  width: 100%;
+  height: 100%;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.background-fix {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -61,6 +68,8 @@ body {
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+  z-index: 100;
+  position: relative;
 }
 .cover-container {
   margin-right: auto;
