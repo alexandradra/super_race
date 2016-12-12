@@ -197,3 +197,16 @@ body {
     bottom: 0;
     color:rgb(218,41,28);
 }
+/*Keyframe for JS effect*/
+.slider {
+    animation: slideRight 0.9s ;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
