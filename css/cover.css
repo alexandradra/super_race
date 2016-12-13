@@ -197,16 +197,34 @@ body {
     bottom: 0;
     color:rgb(218,41,28);
 }
+.icon-github {
+  font-size: 2em;
+  color: black;
+}
+.icon-github.ibni:hover {
+  color: #493BD3;
+}
+.icon-github.mohamed:hover {
+  color: #25DD26;
+}
+.icon-github.alex:hover {
+  color: #FF63B8;
+}
 /*Keyframe for JS effect*/
 .slider {
-    animation: slideRight 0.9s ;
+    transform: translateX(5000px);
 }
-
-@keyframes slideRight {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+@media screen and (max-width: 650px) {
+  .inner.cover {
+    padding-top: 32%;
+  }
+  .masthead-brand {
+    position: absolute;
+    top: 0;
+    left: 22%;
+  }
+  .nav.masthead-nav {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
