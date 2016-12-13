@@ -18,40 +18,12 @@ body {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     position: relative;
-}
-
-.full-width-bckgrnd {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
     background-image: url("../images/circuit_7.jpg");
-    filter: blur(5px);
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    /* For at least Firefox */
-    min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
-
-.blur {
-    position: absolute;
-    left: 0;
-    right: 0;
-    filter: blur(25px);
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-
 .masthead, .mastfoot, .cover-container {
     width: 100%;
 }
-
 .background-fix {
     position: absolute;
     left: 0;
@@ -63,7 +35,25 @@ body {
     min-height: 100%;
     background-color: rgba(70, 70, 70, 0.4);
 }
-
+.full-width-bckgrnd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    background-image: url("../images/road_pattern1.jpg");
+    /*background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;*/
+    background-repeat: repeat repeat;
+    filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
 .site-wrapper-inner {
     display: block;
     vertical-align: top;
@@ -213,6 +203,7 @@ body {
 /*Keyframe for JS effect*/
 .slider {
     transform: translateX(5000px);
+    transition-duration: 3s
 }
 @media screen and (max-width: 650px) {
   .inner.cover {
