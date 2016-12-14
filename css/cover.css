@@ -94,8 +94,7 @@ body {
     }
 }
 .modal-layer {
-  display: block;
-  /*display: none;*/
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,6 +104,9 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal-layer:target {
+  display: block;
+}
 .modal-block {
   margin: 15% auto 0 auto;
   background: #fefefe;
@@ -113,9 +115,8 @@ body {
   max-width: 40%;
   display: block;
   text-shadow: none;
-  /*.translate(0, -500%);
-  .transition-transform(~"0.3s ease-out");*/
 }
+
 .modal-head {
   border-bottom: 1px solid #ddd;
 }
