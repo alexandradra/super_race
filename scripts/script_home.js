@@ -6,3 +6,4 @@ document.addEventListener("DOMContentLoaded",
         });
     });
 //classlist = pour ajouter ou supprimer classes
+/*alert("⚠️ By launching this incredible game, I self-evaluate myself as a trustworthy human being who won't try to cheat to win ⚠️");*/
