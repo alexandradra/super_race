@@ -93,7 +93,7 @@ body {
         transform: rotate(360deg);
     }
 }
-.modal {
+.modal-layer {
   display: block;
   /*display: none;*/
   position: absolute;
@@ -105,7 +105,24 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+.modal-block {
+  background: #fefefe;
+  border: #ddd solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  display: block;
+  /*.translate(0, -500%);
+  .transition-transform(~"0.3s ease-out");*/
+}
+.modal-head {
+  border-bottom: 1px solid #ddd;
+}
+.modal-head h3 {
+  margin: 5px;
+  font-size: 1.5em;
+  color:red;
+}
 .lead {
     margin-top: 5px !important;
 }
