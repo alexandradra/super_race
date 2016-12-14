@@ -106,10 +106,11 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-block {
+  margin: 15% auto 0 auto;
   background: #fefefe;
   border: #ddd solid 1px;
   border-radius: 5px;
-  width: 50%;
+  max-width: 40%;
   display: block;
   text-shadow: none;
   /*.translate(0, -500%);
