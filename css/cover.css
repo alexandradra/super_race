@@ -109,9 +109,9 @@ body {
   background: #fefefe;
   border: #ddd solid 1px;
   border-radius: 5px;
-  padding: 5px;
   width: 50%;
   display: block;
+  text-shadow: none;
   /*.translate(0, -500%);
   .transition-transform(~"0.3s ease-out");*/
 }
@@ -121,16 +121,17 @@ body {
 .modal-head h3 {
   margin: 5px;
   font-size: 1.5em;
-  color:red;
+  color: rgb(218,41,28);
+}
+.modal-cont, .modal-foot {
+  padding: 7px;
+}
+.modal-btn {
+  background-color: rgb(218,41,28);
 }
 .lead {
     margin-top: 5px !important;
 }
-
-.btn-cont {
-    padding: 0;
-}
-
 
 /* Padding for spacing */
 
