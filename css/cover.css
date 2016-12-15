@@ -18,8 +18,8 @@ body {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     position: relative;
-    background-image: url("../images/circuit_7.jpg");
     background-size: cover;
+    overflow: hidden;
 }
 .masthead, .mastfoot, .cover-container {
     width: 100%;
