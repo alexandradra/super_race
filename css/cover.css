@@ -18,6 +18,7 @@ body {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     position: relative;
+<<<<<<< HEAD
     /*background-image: url("../images/circuit_7.jpg");*/
     background-size: cover;
     margin: 0;
@@ -30,6 +31,10 @@ body {
   z-index: 0;
 
 
+=======
+    background-size: cover;
+    overflow: hidden;
+>>>>>>> pop-up-messages
 }
 .masthead, .mastfoot, .cover-container {
     width: 100%;
@@ -59,8 +64,8 @@ body {
     filter: blur(5px);
     width: 100%;
     height: 100%;
-    /* For at least Firefox */
     min-height: 100%;
+    /* For at least Firefox */
     -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
@@ -76,6 +81,7 @@ body {
 .cover-container {
     margin-right: auto;
     margin-left: auto;
+    height: 100%;
 }
 
 .lead.btn-cont {
@@ -91,6 +97,7 @@ body {
 
 .start_btn:hover {
     animation: myMove 0.5s infinite;
+    cursor: pointer;
 }
 
 @keyframes myMove {
@@ -101,15 +108,47 @@ body {
         transform: rotate(360deg);
     }
 }
+.modal-layer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-layer:target {
+  display: block;
+}
+.modal-block {
+  margin: 15% auto 0 auto;
+  background: #fefefe;
+  border: #ddd solid 1px;
+  border-radius: 5px;
+  max-width: 40%;
+  display: block;
+  text-shadow: none;
+}
 
+.modal-head {
+  border-bottom: 1px solid #ddd;
+}
+.modal-head h3 {
+  margin: 5px;
+  font-size: 1.5em;
+  color: rgb(218,41,28);
+}
+.modal-cont, .modal-foot {
+  padding: 7px;
+}
+.modal-btn {
+  background-color: rgb(218,41,28);
+}
 .lead {
     margin-top: 5px !important;
 }
-
-.btn-cont {
-    padding: 0;
-}
-
 
 /* Padding for spacing */
 
@@ -122,6 +161,8 @@ body {
 }
 .inner.cover {
   padding-top: 15%;
+  position: relative;
+  height: 100%;
 }
 .masthead {
     padding-bottom: 5px;
