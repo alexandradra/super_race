@@ -265,7 +265,7 @@ body {
     background: #fefefe;
     border: #ddd solid 1px;
     border-radius: 5px;
-    max-width: 40%;
+    width: 40%;
     display: block;
     text-shadow: none;
 }
@@ -417,6 +417,11 @@ nav {}
 }
 
 @media screen and (max-width: 650px) {
+    .modal-block {
+      margin-top: 40%;
+      width: 75%;
+      z-index: 100;
+    }
     .inner.cover {
         padding-top: 32%;
     }
