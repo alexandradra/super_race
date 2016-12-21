@@ -34,14 +34,92 @@ body {
   display:flex;
   flex-direction: column;
   justify-content:center;
-  padding-top: 7%;
+  padding-top: 10%;
 }
 .race {
   display:flex;
   justify-content:center;
   align-items:center;
 }
-/*#coord {
+.rules {
+  margin: 0;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 500%;
+  background-color: black;
+  color:orange;
+  margin-top: 5px;
+}
+.rules p {
+  font-family: digital;
+  font-size: 1.2em;
+  display:block;
+	-webkit-animation:linear slidingrules 60s infinite ;
+	-moz-animation:linear slidingrules 60s infinite ;
+	-o-animation:linear slidingrules 60s infinite ;
+	-ms-animation:linear slidingrules 60s infinite ;
+	animation:linear slidingrules 60s infinite ;
+	padding:0;
+  margin:0;
+	text-align:left;
+}
+@-webkit-keyframes slidingrules {
+	0%, 100% {margin-left:0;}
+	99% {margin-left:-100%;}
+ }
+@-moz-keyframes slidingrules {
+	0%, 100% {margin-left:0;}
+	99% {margin-left:-100%;}
+ }
+@-o-keyframes slidingrules {
+	0%, 100% {margin-left:0;}
+	99% {margin-left:-100%;}
+ }
+@-ms-keyframes slidingrules {
+	0%, 100% {margin-left:0;}
+	99% {margin-left:-100%;}
+ }
+ @-webkit-keyframes slidingrules {
+  	0%, 100% {margin-left:0;}
+  	99% {margin-left:-100%;}
+  }
+@keyframes slidingrules {
+	0%, 100% {margin-left:0;}
+	99% {margin-left:-100%;}
+ }
+
+@media only screen and (max-width: 860px) {
+.rules {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.rules p {
+	display:block;
+	-webkit-animation:linear marqueelike 15s infinite ;
+	-moz-animation:linear marqueelike 15s infinite ;
+	-o-animation:linear marqueelike 15s infinite ;
+	-ms-animation:linear marqueelike 15s infinite ;
+	animation:linear marqueelike 15s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+}
+
+/*.rules:after {
+	content:attr(data-text);
+	position:absolute;
+	white-space:nowrap;
+	padding-left:10px;
+}
+#coord {
   position:fixed;
   top:20px;
   left:20px;
@@ -188,7 +266,7 @@ body {
     top: 0;
     left:0;
     height:12%;
-    z-index: 3;
+    z-index: 10;
 }
 nav {
 
@@ -235,6 +313,7 @@ nav {
     height: 100%;
     width: auto;
     margin-right: 3px;
+    margin-bottom: 3px;
 }
 .nav.masthead-nav {
   float: right;
