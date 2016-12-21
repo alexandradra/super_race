@@ -126,29 +126,6 @@ body {
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 860px) {
-    .rules {
-        display: block;
-        margin: 3em auto;
-        overflow: hidden;
-        position: relative;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .defile {
-        display: block;
-        -webkit-animation: linear marqueelike 15s infinite;
-        -moz-animation: linear marqueelike 15s infinite;
-        -o-animation: linear marqueelike 15s infinite;
-        -ms-animation: linear marqueelike 15s infinite;
-        animation: linear marqueelike 15s infinite;
-        margin-left: -100%;
-        padding: 0 5px;
-        text-align: left;
-        height: 25px;
-    }
-}
-
 
 /*.rules:after {
 	content:attr(data-text);
@@ -188,12 +165,8 @@ body {
 }
 
 .full-width-bckgrnd {
-    /*  z-index: 99;*/
     display: block;
     background-image: url("../images/road_pattern1.jpg");
-    /*background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;*/
     background-repeat: repeat repeat;
     filter: blur(5px);
     width: 100%;
@@ -304,12 +277,17 @@ body {
 }
 
 .inner.cover {
-    padding-top: 15%;
+    padding-top: 12%;
     position: relative;
     height: 100%;
     z-index: 4;
 }
-
+.cover-heading {
+  color: rgb(218, 41, 28);
+  font-family: digital;
+  font-size: 3.5em;
+  margin: 20px;
+}
 .masthead {
     padding-bottom: 5px;
     font-family: faster;
@@ -418,20 +396,57 @@ nav {}
 
 @media screen and (max-width: 650px) {
     .modal-block {
-      margin-top: 40%;
-      width: 75%;
-      z-index: 100;
+        margin-top: 35%;
+        width: 80%;
+        z-index: 100;
     }
     .inner.cover {
-        padding-top: 32%;
+        padding-top: 25%;
+    }
+    .cover-heading {
+      margin-bottom: 20px;
+      font-size: 3em;
+    }
+    .lead {
+      line-height: 1.3em;
+    }
+    .masthead.clearfix {
+        height: 10%;
     }
     .masthead-brand {
         position: absolute;
         top: 0;
-        left: 22%;
+        left: 25%;
+        font-size: 2em;
     }
     .nav.masthead-nav {
         width: 100%;
         margin: 0 auto;
+        padding: 0;
+    }
+    .nav.masthead-nav li a {
+        padding: 0;
+    }
+    .posrel {
+        margin-top: 10%;
+    }
+    .rules {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        table-layout: fixed;
+        width: 100%;
+    }
+    .defile {
+        display: block;
+        -webkit-animation: linear marqueelike 15s infinite;
+        -moz-animation: linear marqueelike 15s infinite;
+        -o-animation: linear marqueelike 15s infinite;
+        -ms-animation: linear marqueelike 15s infinite;
+        animation: linear marqueelike 15s infinite;
+        margin-left: -100%;
+        padding: 0 5px;
+        text-align: left;
+        height: 25px;
     }
 }
