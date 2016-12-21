@@ -1,6 +1,7 @@
 a, a:focus, a:hover {
     color: #fff;
 }
+
 .btn-default, .btn-default:hover, .btn-default:focus {
     color: #333;
     text-shadow: none;
@@ -8,10 +9,12 @@ a, a:focus, a:hover {
     background-color: #fff;
     border: 1px solid #fff;
 }
+
 html, body {
     height: 100%;
     width: 100%;
 }
+
 body {
     color: black;
     text-align: center;
@@ -22,96 +25,130 @@ body {
     margin: 0;
     overflow: hidden;
 }
-.game  {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width:100%;
-  z-index: 0;
-  background-color: #09C701;
-  overflow: hidden;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  padding-top: 10%;
+
+.game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: #09C701;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
 }
+
 .race {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .rules {
-  margin: 0;
-	overflow: hidden;
-	position: relative;
-	table-layout: fixed;
-	width: 500%;
-  background-color: black;
-  color:orange;
-  margin-top: 5px;
+    display: block;
+    margin: 3em auto;
+    overflow: hidden;
+    position: relative;
+    table-layout: fixed;
+    width: 600%;
+    background-color: black;
+    color: orange;
+    margin-top: 5px;
 }
-.rules p {
-  font-family: digital;
-  font-size: 1.2em;
-  display:block;
-	-webkit-animation:linear slidingrules 60s infinite ;
-	-moz-animation:linear slidingrules 60s infinite ;
-	-o-animation:linear slidingrules 60s infinite ;
-	-ms-animation:linear slidingrules 60s infinite ;
-	animation:linear slidingrules 60s infinite ;
-	padding:0;
-  margin:0;
-	text-align:left;
+
+.defile {
+    font-family: digital;
+    font-size: 1.2em;
+    display: block;
+    -webkit-animation: linear slidingrules 70s infinite;
+    -moz-animation: linear slidingrules 70s infinite;
+    -o-animation: linear slidingrules 70s infinite;
+    -ms-animation: linear slidingrules 70s infinite;
+    animation: linear slidingrules 70s infinite;
+    margin-left: -100%;
+    padding: 0 5px;
+    text-align: left;
+    height: 25px;
 }
+
 @-webkit-keyframes slidingrules {
-	0%, 100% {margin-left:0;}
-	99% {margin-left:-100%;}
- }
+    0%, 100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
 @-moz-keyframes slidingrules {
-	0%, 100% {margin-left:0;}
-	99% {margin-left:-100%;}
- }
+    0%, 100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
 @-o-keyframes slidingrules {
-	0%, 100% {margin-left:0;}
-	99% {margin-left:-100%;}
- }
+    0%, 100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
 @-ms-keyframes slidingrules {
-	0%, 100% {margin-left:0;}
-	99% {margin-left:-100%;}
- }
- @-webkit-keyframes slidingrules {
-  	0%, 100% {margin-left:0;}
-  	99% {margin-left:-100%;}
-  }
+    0%, 100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
 @keyframes slidingrules {
-	0%, 100% {margin-left:0;}
-	99% {margin-left:-100%;}
- }
+    0%, 100% {
+        margin-left: 0;
+    }
+    99.99% {
+        margin-left: -100%;
+    }
+}
+
+.defile:after {
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    padding-left: 10px;
+}
 
 @media only screen and (max-width: 860px) {
-.rules {
-	display: block;
-	margin: 3em auto;
-	overflow: hidden;
-	position: relative;
-	table-layout: fixed;
-	width: 100%;
+    .rules {
+        display: block;
+        margin: 3em auto;
+        overflow: hidden;
+        position: relative;
+        table-layout: fixed;
+        width: 100%;
+    }
+    .defile {
+        display: block;
+        -webkit-animation: linear marqueelike 15s infinite;
+        -moz-animation: linear marqueelike 15s infinite;
+        -o-animation: linear marqueelike 15s infinite;
+        -ms-animation: linear marqueelike 15s infinite;
+        animation: linear marqueelike 15s infinite;
+        margin-left: -100%;
+        padding: 0 5px;
+        text-align: left;
+        height: 25px;
+    }
 }
 
-.rules p {
-	display:block;
-	-webkit-animation:linear marqueelike 15s infinite ;
-	-moz-animation:linear marqueelike 15s infinite ;
-	-o-animation:linear marqueelike 15s infinite ;
-	-ms-animation:linear marqueelike 15s infinite ;
-	animation:linear marqueelike 15s infinite ;
-	margin-left:-100%;
-	padding:0 5px;
-	text-align:left;
-	height:25px;
-}
-}
 
 /*.rules:after {
 	content:attr(data-text);
@@ -129,12 +166,15 @@ body {
   top:40px;
   left:20px;
 }*/
+
 .masthead, .mastfoot, .cover-container {
     width: 100%;
 }
+
 .alex {
-  height: 100%;
+    height: 100%;
 }
+
 .background-fix {
     position: absolute;
     left: 0;
@@ -146,8 +186,9 @@ body {
     min-height: 100%;
     background-color: rgba(70, 70, 70, 0.4);
 }
+
 .full-width-bckgrnd {
-  /*  z-index: 99;*/
+    /*  z-index: 99;*/
     display: block;
     background-image: url("../images/road_pattern1.jpg");
     /*background-size: contain;
@@ -162,6 +203,7 @@ body {
     -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
+
 .site-wrapper-inner {
     display: block;
     vertical-align: top;
@@ -201,47 +243,55 @@ body {
         transform: rotate(360deg);
     }
 }
+
 .modal-layer {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal-layer:target {
-  display: block;
+    display: block;
 }
+
 .modal-block {
-  margin: 15% auto 0 auto;
-  background: #fefefe;
-  border: #ddd solid 1px;
-  border-radius: 5px;
-  max-width: 40%;
-  display: block;
-  text-shadow: none;
+    margin: 15% auto 0 auto;
+    background: #fefefe;
+    border: #ddd solid 1px;
+    border-radius: 5px;
+    max-width: 40%;
+    display: block;
+    text-shadow: none;
 }
 
 .modal-head {
-  border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
+
 .modal-head h3 {
-  margin: 5px;
-  font-size: 1.5em;
-  color: rgb(218,41,28);
+    margin: 5px;
+    font-size: 1.5em;
+    color: rgb(218, 41, 28);
 }
+
 .modal-cont, .modal-foot {
-  padding: 7px;
+    padding: 7px;
 }
+
 .modal-btn {
-  background-color: rgb(218,41,28);
+    background-color: rgb(218, 41, 28);
 }
+
 .lead {
     margin-top: 5px !important;
 }
+
 
 /* Padding for spacing */
 
@@ -252,25 +302,27 @@ body {
 .cover .lead:nth-child(3) {
     margin-bottom: 3px;
 }
+
 .inner.cover {
-  padding-top: 15%;
-  position: relative;
-  height: 100%;
-  z-index: 4;
+    padding-top: 15%;
+    position: relative;
+    height: 100%;
+    z-index: 4;
 }
+
 .masthead {
     padding-bottom: 5px;
     font-family: faster;
     font-size: 1.5em;
     position: fixed;
     top: 0;
-    left:0;
-    height:12%;
+    left: 0;
+    height: 12%;
     z-index: 10;
 }
-nav {
 
-}
+nav {}
+
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -291,21 +343,21 @@ nav {
     font-size: 16px;
     color: #fff;
     /* IE8 proofing */
-    color: rgba(218,41,28, 0.75);
+    color: rgba(218, 41, 28, 0.75);
     border-bottom: 3px solid transparent;
-    color: black ;
+    color: black;
     font-size: 1em;
 }
 
 .masthead-nav>li>a:hover, .masthead-nav>li>a:focus {
     background-color: transparent;
-    border-bottom-color: rgb(218,41,28);
-    border-bottom-color: rgba(218,41,28, 0.25);
+    border-bottom-color: rgb(218, 41, 28);
+    border-bottom-color: rgba(218, 41, 28, 0.25);
 }
 
 .masthead-nav>.active>a, .masthead-nav>.active>a:hover, .masthead-nav>.active>a:focus {
     color: black;
-    border-bottom-color: rgb(218,41,28);
+    border-bottom-color: rgb(218, 41, 28);
 }
 
 .logo {
@@ -315,9 +367,10 @@ nav {
     margin-right: 3px;
     margin-bottom: 3px;
 }
+
 .nav.masthead-nav {
-  float: right;
-  padding-top: 1%;
+    float: right;
+    padding-top: 1%;
 }
 
 .cover {
@@ -335,37 +388,45 @@ nav {
     color: rgba(255, 255, 255, .5);
     position: fixed;
     bottom: 0;
-    color:rgb(218,41,28);
+    color: rgb(218, 41, 28);
 }
+
 .icon-github {
-  font-size: 2em;
-  color: black;
+    font-size: 2em;
+    color: black;
 }
+
 .icon-github.ibni:hover {
-  color: #493BD3;
+    color: #493BD3;
 }
+
 .icon-github.mohamed:hover {
-  color: #25DD26;
+    color: #25DD26;
 }
+
 .icon-github.alex:hover {
-  color: #FF63B8;
+    color: #FF63B8;
 }
+
+
 /*Keyframe for JS effect*/
+
 .slider {
     transform: translateX(5000px);
     transition-duration: 3s
 }
+
 @media screen and (max-width: 650px) {
-  .inner.cover {
-    padding-top: 32%;
-  }
-  .masthead-brand {
-    position: absolute;
-    top: 0;
-    left: 22%;
-  }
-  .nav.masthead-nav {
-    width: 100%;
-    margin: 0 auto;
-  }
+    .inner.cover {
+        padding-top: 32%;
+    }
+    .masthead-brand {
+        position: absolute;
+        top: 0;
+        left: 22%;
+    }
+    .nav.masthead-nav {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
