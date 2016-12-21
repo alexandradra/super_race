@@ -69,9 +69,9 @@ body {
     -ms-animation: linear slidingrules 70s infinite;
     animation: linear slidingrules 70s infinite;
     margin-left: -100%;
-    padding: 0 5px;
+    padding: 0;
     text-align: left;
-    height: 25px;
+    height: 27px;
 }
 
 @-webkit-keyframes slidingrules {
@@ -260,6 +260,9 @@ body {
 .modal-btn {
     background-color: rgb(218, 41, 28);
 }
+.modal-btn:hover {
+  color:white;
+}
 
 .lead {
     margin-top: 5px !important;
@@ -396,7 +399,7 @@ nav {}
     transition-duration: 3s
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 680px) {
     .modal-block {
         margin-top: 35%;
         width: 80%;
@@ -413,42 +416,26 @@ nav {}
       line-height: 1.3em;
     }
     .masthead.clearfix {
-        height: 10%;
+        height: 50px;
     }
     .masthead-brand {
         position: absolute;
-        top: 0;
-        left: 25%;
-        font-size: 2em;
+        top: -8px;
+        left: 4%;
+        font-size: 1.9em;
     }
     .nav.masthead-nav {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 5px auto;
         padding: 0;
     }
     .nav.masthead-nav li a {
         padding: 0;
     }
+    .rules {
+      margin-top: 10px;
+    }
     .posrel {
         margin-top: 10%;
-    }
-    .rules {
-        display: block;
-        overflow: hidden;
-        position: relative;
-        table-layout: fixed;
-        width: 100%;
-    }
-    .defile {
-        display: block;
-        -webkit-animation: linear marqueelike 15s infinite;
-        -moz-animation: linear marqueelike 15s infinite;
-        -o-animation: linear marqueelike 15s infinite;
-        -ms-animation: linear marqueelike 15s infinite;
-        animation: linear marqueelike 15s infinite;
-        margin-left: -100%;
-        padding: 0 5px;
-        text-align: left;
-        height: 25px;
     }
 }
