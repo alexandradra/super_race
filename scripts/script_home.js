@@ -6,4 +6,10 @@ document.addEventListener("DOMContentLoaded",
         });
     });
 //classlist = pour ajouter ou supprimer classes
-/*alert("⚠️ By launching this incredible game, I self-evaluate myself as a trustworthy human being who won't try to cheat to win ⚠️");*/
+document.addEventListener("DOMContentLoaded",
+    function() {
+        document.querySelector(".game_nav").addEventListener("click", function() {
+          document.querySelectorAll(".zou")[0].classList.toggle("slider");
+          document.querySelectorAll(".zou")[1].classList.toggle("slider");
+        });
+    });

@@ -14,3 +14,7 @@
     font-family: 'faster';
     src: url('../fonts/FasterOne-Regular.ttf');
 }
+@font-face {
+    font-family: 'digital';
+    src: url('../fonts/digital-7.ttf');
+}
