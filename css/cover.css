@@ -124,15 +124,17 @@ body {
     white-space: nowrap;
     padding-left: 10px;
 }
-
-
-/*.rules:after {
-	content:attr(data-text);
-	position:absolute;
-	white-space:nowrap;
-	padding-left:10px;
+.posrel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#coord {
+
+
+
+/*#coord {
   position:fixed;
   top:20px;
   left:20px;
