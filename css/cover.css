@@ -305,9 +305,12 @@ body {
     height: 11%;
     z-index: 10;
 }
-.logo {
+.brand {
     float: left;
-    height: 100%;
+    display: flex;
+}
+.logo {
+    height: 40%;
     width: auto;
     margin-right: 10px;
     margin-bottom: 3px;
@@ -316,7 +319,6 @@ body {
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
-    float: left;
 }
 .masthead-brand a {
   color: black;
@@ -422,12 +424,21 @@ body {
     .masthead {
         height: 17%;
         font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .brand {
+      height: 55%;
+    }
+    .logo-link {
+      width: 15%;
     }
     .logo {
-      height:50%;
+      height:80%;
     }
     .masthead-brand {
-        font-size: 1.7em;
+        font-size: 1.9em;
+        margin-left: 6%;
     }
     .nav.masthead-nav {
         width: 100%;
@@ -441,7 +452,7 @@ body {
       height: 70%;
     }
     .rules {
-        margin-top: 10px;
+        display: none;
     }
     .posrel {
         margin-top: 10%;
