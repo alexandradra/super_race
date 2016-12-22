@@ -414,19 +414,20 @@ body {
     }
     .cover-heading {
         margin-bottom: 20px;
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .lead {
         line-height: 1.3em;
     }
     .masthead {
         height: 17%;
+        font-size: 1.2em;
     }
     .logo {
-      height:70%;
+      height:50%;
     }
     .masthead-brand {
-        font-size: 2em;
+        font-size: 1.7em;
     }
     .nav.masthead-nav {
         width: 100%;
@@ -435,6 +436,9 @@ body {
     }
     .nav.masthead-nav li a {
         padding: 0;
+    }
+    .start_btn {
+      height: 70%;
     }
     .rules {
         margin-top: 10px;
