@@ -1,5 +1,6 @@
 a, a:focus, a:hover {
     color: #fff;
+    text-decoration: none;
 }
 
 .btn-default, .btn-default:hover, .btn-default:focus {
@@ -49,14 +50,12 @@ body {
 
 .rules {
     display: block;
-    margin: 3em auto;
     overflow: hidden;
     position: relative;
     table-layout: fixed;
     width: 600%;
     background-color: black;
     color: orange;
-    margin-top: 5px;
 }
 
 .defile {
@@ -260,8 +259,9 @@ body {
 .modal-btn {
     background-color: rgb(218, 41, 28);
 }
+
 .modal-btn:hover {
-  color:white;
+    color: white;
 }
 
 .lead {
@@ -274,9 +274,7 @@ body {
 .inner {
     padding: 10px 30px 10px 30px;
 }
-.inner a {
-  color: black;
-}
+
 .cover .lead:nth-child(3) {
     margin-bottom: 3px;
 }
@@ -287,12 +285,14 @@ body {
     height: 100%;
     z-index: 4;
 }
+
 .cover-heading {
-  color: rgb(218, 41, 28);
-  font-family: digital;
-  font-size: 3.5em;
-  margin: 20px;
+    color: rgb(218, 41, 28);
+    font-family: digital;
+    font-size: 3.5em;
+    margin: 20px;
 }
+
 .masthead {
     padding-bottom: 5px;
     font-family: faster;
@@ -300,16 +300,30 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 12%;
+    height: 11%;
     z-index: 10;
 }
-
-nav {}
+.logo {
+    float: left;
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
 
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
     float: left;
+}
+.masthead-brand a {
+  color: black;
+}
+
+.nav.masthead-nav {
+    float: right;
+    padding-top: 1%;
+    margin-right: 3%;
 }
 
 .masthead-nav>li {
@@ -343,18 +357,6 @@ nav {}
     border-bottom-color: rgb(218, 41, 28);
 }
 
-.logo {
-    float: left;
-    height: 100%;
-    width: auto;
-    margin-right: 3px;
-    margin-bottom: 3px;
-}
-
-.nav.masthead-nav {
-    float: right;
-    padding-top: 1%;
-}
 
 .cover {
     padding: 20px;
@@ -409,20 +411,20 @@ nav {}
         padding-top: 25%;
     }
     .cover-heading {
-      margin-bottom: 20px;
-      font-size: 3em;
+        margin-bottom: 20px;
+        font-size: 3em;
     }
     .lead {
-      line-height: 1.3em;
+        line-height: 1.3em;
     }
-    .masthead.clearfix {
-        height: 50px;
+    .masthead {
+        height: 17%;
+    }
+    .logo {
+      height:70%;
     }
     .masthead-brand {
-        position: absolute;
-        top: -8px;
-        left: 4%;
-        font-size: 1.9em;
+        font-size: 2em;
     }
     .nav.masthead-nav {
         width: 100%;
@@ -433,7 +435,7 @@ nav {}
         padding: 0;
     }
     .rules {
-      margin-top: 10px;
+        margin-top: 10px;
     }
     .posrel {
         margin-top: 10%;
