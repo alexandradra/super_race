@@ -100,34 +100,34 @@
     cursor: url('../images/red_car_left.png'), auto;
 }
 
-.middle-road-topl-corner {
-    width: 56px;
+.road-left-topl-corner {
+    width: 69px;
     height: 66px;
     border: 1px solid black;
-    left: 0px;
-    bottom: 490px;
+    left: -9px;
+    bottom: 534px;
     position: absolute;
-    cursor: url('../images/red_car_left_bas.png'), auto;
+    cursor: url(../images/red_car_left_bas.png), auto;
 }
 
 .road-left {
-    width: 67px;
+    width: 83px;
     height: 423px;
     position: absolute;
     border: 1px solid black;
-    bottom: 66px;
-    left: 0px;
-    cursor: url('../images/red_car_bas.png'), auto;
+    bottom: 112px;
+    left: -11px;
+    cursor: url(../images/red_car_bas.png), auto;
 }
 
 .road-left-Btml-corner {
     width: 88px;
     height: 54px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     left: 0px;
     bottom: 10px;images/
     position: absolute;
-    cursor: url('../images/red_car_right_ba.png'), auto;
+    cursor: url(''), auto;
 }
 
 .road-left-Btml {
@@ -135,41 +135,60 @@
     height: 63px;
     border: 1px solid black;
     left: 89px;
-    bottom: 10px;
+    bottom: 57px;
     position: absolute;
-    cursor: url('../images/red_car_right.png'), auto;
+    cursor: url(../images/red_car_right.png), auto;
 }
 
 .trav1 {
     left: 169px;
-    bottom: 92px;
+    bottom: 143px;
     width: 269px;
     height: 58px;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
-    cursor: url('../images/red_car_right_trav.png'), auto;
+    cursor: url(../images/red_car_right_trav.png), auto;
 }
 
 .dir {
     left: 251px;
-    bottom: 72px;
+    bottom: 126px;
     width: 100px;
     height: 9px;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
-    cursor: url('../images/red_car_right.png'), auto;
+    cursor: url(../images/red_car_right.png), auto;
 }
 
 .trav2 {
     left: 296px;
-    bottom: -3px;../
+    bottom: 53px;
+    width: 99px;
     height: 94px;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
-    cursor: url('../images/red_car_right_ba.png'), auto;
+    cursor: url(../images/red_car_right_ba.png), auto;
+}
+.corner-right {
+    width: 64px;
+    height: 55px;
+    border: 1px solid black;
+    left: 956px;
+    bottom: 544px;
+    position: absolute;
+    cursor: url(../images/red_car_left_haut.png), auto;
+}
+.corner-left {
+    width: 97px;
+    height: 56px;
+    border: 1px solid black;
+    left: -7px;
+    bottom: 57px;
+    position: absolute;
+    cursor: url(../images/red_car_right_ba.png), auto;
 }
 .race {
   margin-left: 100px;
