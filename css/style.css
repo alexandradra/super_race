@@ -1,22 +1,22 @@
-.road-right {
+..road-right {
     width: 90px;
     height: 429px;
     position: absolute;
     border: 1px solid black;
-    bottom: 64px;
-    left: 927px;
-    cursor: url('../images/red_car_left_haut_droit.png'), auto;
+    bottom: 116px;
+    left: 930px;
+    cursor: url(../images/red_car_left_haut_droit.png), auto;
     z-index: 2;
   }
 
 .road-bottom {
-    left: 385px;
-    bottom: 11px;
+    left: 387px;
+    bottom: 56px;
     width: 542px;
     height: 70px;
     border: 1px solid black;
     position: absolute;
-    cursor: url('../images/red_car_right.png'), auto;
+    cursor: url(../images/red_car_right.png), auto;
 }
 
 .road-right-Btmr-corner {
@@ -24,9 +24,9 @@
     height: 82px;
     border: 1px solid black;
     left: 928px;
-    bottom: 11px;
+    bottom: 61px;
     position: absolute;
-    cursor: url('../images/red_car_right_trav.png'), auto;
+    cursor: url(../images/red_car_right_trav.png), auto;
 }
 '
 .road-right-topr-corner {
