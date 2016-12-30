@@ -101,11 +101,11 @@
 }
 
 .road-left-topl-corner {
-    width: 69px;
-    height: 66px;
+    width: 7%;
+    height: 11%;
     border: 1px solid black;
-    left: -9px;
-    bottom: 534px;
+    left: 0%;
+    bottom: 89%;
     position: absolute;
     cursor: url(../images/red_car_left_bas.png), auto;
 }
@@ -205,7 +205,7 @@
   margin-right: auto;
 }
 .container-image {
-    height:88%;
+    height:68%;
     width: 86%;
     border: 1px solid black;
 }
