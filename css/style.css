@@ -1,10 +1,10 @@
 .road-right {
-    width: 90px;
-    height: 429px;
+    width: 7%;
+    height: 75%;
     position: absolute;
-    /*border: 1px solid black;*/
-    bottom: 116px;
-    left: 930px;
+    border: 1px solid black;
+    bottom: 15%;
+    left: 93%;
     cursor: url(../images/red_car_left_haut_droit.png), auto;
     z-index: 2;
   }
@@ -40,11 +40,11 @@
 }
 
 .road-right-topr {
-    width: 591px;
-    height: 123px;
-    /*border: 1px solid black;*/
-    left: 366px;
-    bottom: 476px;
+    width: 59%;
+    height: 23%;
+    border: 1px solid black;
+    left: 36%;
+    bottom: 77%;
     position: absolute;
     cursor: url(../images/red_car_left.png), auto;
 }
