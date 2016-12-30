@@ -131,11 +131,11 @@
 }
 
 .road-left-Btml {
-    width: 110px;
-    height: 63px;
+    width: 8%;
+    height: 12%;
     border: 1px solid black;
-    left: 89px;
-    bottom: 57px;
+    left: 7%;
+    bottom: 1px;
     position: absolute;
     cursor: url(../images/red_car_right.png), auto;
 }
@@ -182,11 +182,11 @@
     cursor: url(../images/red_car_left_haut.png), auto;
 }
 .corner-left {
-    width: 97px;
-    height: 56px;
+    width: 7%;
+    height: 12%;
     border: 1px solid black;
-    left: -7px;
-    bottom: 57px;
+    left: 0%;
+    bottom: 0%;
     position: absolute;
     cursor: url(../images/red_car_right_ba.png), auto;
 }
