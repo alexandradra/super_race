@@ -37,7 +37,7 @@ document.getElementById("div").addEventListener("mousemove", function(){
   count ++;
   document.getElementById('score').innerHTML = "Score : "+count;
 });
-
+/*
 var car = document.getElementById("car");
 var left = 195;
 var bottom = 150;
@@ -45,13 +45,13 @@ car.style.right = left+"px";
 car.style.bottom = bottom+"px";
 
 document.onkeydown = checkKey;
-
+*/
 
 function checkKey(e) {
 
     e = e || window.event;
     car.style.transition = "0.1s";
-    
+
     if (e.keyCode == '38') { // up
         car.style.transform = "rotate(0deg)";
         car.style.bottom = bottom+10+"px";
