@@ -314,6 +314,7 @@ body {
     height: 100%;
 }
 .logo {
+    float: left;
     height: 80%;
     width: auto;
     margin-right: 10px;
