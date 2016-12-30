@@ -1,8 +1,10 @@
-
+let count = 0;
 var carX = getPosition(document.getElementById("car")).x;
 var carY = getPosition(document.getElementById("car")).y;
+var area = document.getElementsByTagName('area');
+var life = 15;
 
-document.body.addEventListener("mouseover", function mouse_position()
+/*document.body.addEventListener("mouseover", function mouse_position()
 {
     var e = window.event;
 
@@ -14,28 +16,26 @@ document.body.addEventListener("mouseover", function mouse_position()
 
     setTimeout("mouse_position()",100);
 
-});
+});*/
 
-
-var area = document.getElementsByTagName('area');
-var score = 15;
-
-document.getElementById("score").innerHTML = "score :"+score;
+document.getElementById("life").innerHTML = "Life :"+life;
 
 for (var i = 0; i < area.length; i++) {
     area[i].addEventListener('mouseover',function(){
-      score--;
-      this.style.cursor = "url('car.png'), auto"
-      document.getElementById("score").innerHTML = "score :"+score;
-      if (score === 0) {
+      life --;
+      document.getElementById("life").innerHTML = "Life :"+life;
+      if (life === 0) {
         alert("You loose ! try again");
-        score = 15;
+        life = 15;
+        count = 0;
+        document.getElementById("life").innerHTML = "Life :"+life;
       }
     },false);
 }
 
-document.getElementById("image").addEventListener("mouseover", function(e){
-  this.style.cursor = "url('car.png'), auto";
+document.getElementById("div").addEventListener("mousemove", function(){
+  count ++;
+  document.getElementById('score').innerHTML = "Score : "+count;
 });
 
 var car = document.getElementById("car");

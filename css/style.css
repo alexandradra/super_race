@@ -8,7 +8,9 @@
     cursor: url(../images/red_car_left_haut_droit.png), auto;
     z-index: 2;
   }
-
+label {
+  z-index: 10;
+}
 .road-bottom {
     left: 387px;
     bottom: 56px;
