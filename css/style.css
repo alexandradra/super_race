@@ -131,7 +131,7 @@
 }
 
 .road-left-Btml {
-    width: 8%;
+    width: 12%;
     height: 12%;
     border: 1px solid black;
     left: 7%;
@@ -141,10 +141,10 @@
 }
 
 .trav1 {
-    left: 169px;
-    bottom: 143px;
-    width: 269px;
-    height: 58px;
+    left: 16%;
+    bottom: 83px;
+    width: 25%;
+    height: 14%;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
@@ -152,10 +152,10 @@
 }
 
 .dir {
-    left: 251px;
-    bottom: 126px;
-    width: 100px;
-    height: 9px;
+    left: 26%;
+    bottom: 14%;
+    width: 7%;
+    height: 2%;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
@@ -163,10 +163,10 @@
 }
 
 .trav2 {
-    left: 296px;
-    bottom: 53px;
-    width: 99px;
-    height: 94px;
+    left: 28%;
+    bottom: -6%;
+    width: 11%;
+    height: 24%;
     border: 1px solid black;
     position: absolute;
     transform: rotate(145deg);
