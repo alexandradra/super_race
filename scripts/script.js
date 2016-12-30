@@ -51,28 +51,7 @@ function checkKey(e) {
 
     e = e || window.event;
     car.style.transition = "0.1s";
-    if (e.keyCode == '49') { // 1 pad
-      car.style.transform = "rotate(135deg)";
-      car.style.bottom = bottom-10+"px";
-      car.style.right = left-10+"px";
-      bottom-=10;
-      left-=10;
-    }
-    if (e.keyCode == '51') { // 1 pad
-        car.style.transform = "rotate(0deg)";
-        car.style.bottom = bottom+10+"px";
-        bottom+=10;
-    }
-    if (e.keyCode == '55') { // 1 pad
-        car.style.transform = "rotate(0deg)";
-        car.style.bottom = bottom+10+"px";
-        bottom+=10;
-    }
-    if (e.keyCode == '57') { // 1 pad
-        car.style.transform = "rotate(0deg)";
-        car.style.bottom = bottom+10+"px";
-        bottom+=10;
-    }
+    
     if (e.keyCode == '38') { // up
         car.style.transform = "rotate(0deg)";
         car.style.bottom = bottom+10+"px";
