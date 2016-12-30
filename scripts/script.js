@@ -84,7 +84,7 @@ document.getElementById("left").addEventListener("click",function(){
   left-=10;
 });
 document.getElementById("right").addEventListener("click",function(){
-
+car.style.transform = "rotate(90deg)";
 });
 document.getElementById("turn_left").addEventListener("click",function(){
   car.style.transform = "rotate(-90deg)";
