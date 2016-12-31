@@ -70,14 +70,14 @@
 }
 
 .middle-road {
-    left: 287px;
-    bottom: 356px;
-    width: 192px;
-    height: 79px;
+    left: 31%;
+    bottom: 54%;
+    width: 15%;
+    height: 15%;
     border: 1px solid black;
     position: absolute;
     cursor: url(../images/red_car_right_bas.png), auto;
-    transform: rotate(60deg);
+    transform: rotate(53deg);
 }
 
 .middle-bottom {
