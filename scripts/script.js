@@ -75,7 +75,7 @@ function checkKey(e) {
     }
 
 }
-
+/*
 document.getElementById("left").addEventListener("click",function(){
   car.style.transform = "rotate(135deg)";
   car.style.bottom = bottom-10+"px";
@@ -98,7 +98,7 @@ document.getElementById("up").addEventListener("click",function(){
 document.getElementById("down").addEventListener("click",function(){
   car.style.bottom = bottom-10+"px";
 });
-
+*/
 
 function getPosition(el) {
   var xPos = 0;
