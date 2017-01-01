@@ -116,9 +116,9 @@ label {
     width: 8%;
     height: 77%;
     position: absolute;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     bottom: 12%;
-    left: 0%;
+    left: -1%;
     cursor: url(../images/red_car_bas.png), auto;
 }
 
@@ -259,35 +259,45 @@ label {
     width: 7%;
     height: 11%;
     border: 1px solid black;
-    left: 0%;
-    bottom: 89%;
+    left: -5%;
+    bottom: 93%;
     position: absolute;
-    cursor: url(../images/red_car_left_bas.png), auto;
+    cursor: url(../images/red_car_left_bas_explosion_R.png), auto;
+    border-bottom-right-radius: 145%;
 }
 
 .coins-haut-gauche2 {
     width: 7%;
     height: 11%;
     border: 1px solid black;
-    left: 0%;
-    bottom: 89%;
+    left: -7%;
+    bottom: 84%;
     position: absolute;
-    cursor: url(../images/red_car_left_bas.png), auto;
+    cursor: url(../images/red_car_left_bas_explosion_R.png), auto;
+    border-bottom-right-radius: 145%;
 }
 
 .coins-haut-gauche3 {
     width: 7%;
     height: 11%;
     border: 1px solid black;
-    left: 0%;
-    bottom: 89%;
+    left: 2%;
+    bottom: 99%;
     position: absolute;
-    cursor: url(../images/red_car_left_bas.png), auto;
+    cursor: url(../images/red_car_left_bas_explosion_R.png), auto;
+    border-bottom-right-radius: 145%;
 }
-/*.cadre-image {
-  width: 100%;
-  height: 100%;
-}*/
+
+.accdnt-gauche {
+    width: 3%;
+    height: 77%;
+    position: absolute;
+    border: 1px solid black;
+    bottom: 12%;
+    left: -4%;
+    cursor: url(../images/red_car_bas_explosion_R.png), auto;
+}
+
 #image {
   width: 100%;
   height: 100%;
