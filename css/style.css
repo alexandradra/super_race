@@ -22,15 +22,17 @@ label {
 }
 
 .road-right-Btmr-corner {
-    width: 6%;
-    height: 15%;
-    /*border: 1px solid black;*/
-    left: 94%;
-    bottom: 0%;
-    position: absolute;
-    cursor: url(../images/red_car_right_trav.png), auto;
+  width: 2%;
+height: 15%;
+border: 1px solid black;
+left: 94%;
+bottom: 2%;
+position: absolute;
+cursor: url(../images/red_car_right_trav.png), auto;
+border-bottom-right-radius: 140%;
+border-top-right-radius: 140%;
 }
-'
+
 .road-right-topr-corner {
     width: 69px;
     height: 66px;
@@ -103,13 +105,14 @@ label {
 }
 
 .road-left-topl-corner {
-    width: 7%;
-    height: 11%;
-    /*border: 1px solid black;*/
-    left: 0%;
-    bottom: 89%;
-    position: absolute;
-    cursor: url(../images/red_car_left_bas.png), auto;
+  width: 7%;
+height: 11%;
+border: 1px solid black;
+left: 0%;
+bottom: 89%;
+position: absolute;
+cursor: url(../images/red_car_left_bas.png), auto;
+border-top-left-radius: 100%;
 }
 
 .road-left {
@@ -165,32 +168,36 @@ label {
 }
 
 .trav2 {
-    left: 28%;
-    bottom: -6%;
-    width: 11%;
-    height: 24%;
-    /*border: 1px solid black;*/
-    position: absolute;
-    transform: rotate(145deg);
-    cursor: url(../images/red_car_right_ba.png), auto;
+  left: 29%;
+bottom: -5%;
+width: 11%;
+height: 24%;
+border: 1px solid black;
+position: absolute;
+transform: rotate(145deg);
+cursor: url(../images/red_car_right_ba.png), auto;
 }
+
 .corner-right {
-    width: 5%;
-    height: 10%;
-    /*border: 1px solid black;*/
-    left: 95%;
-    bottom: 90%;
-    position: absolute;
-    cursor: url(../images/red_car_left_haut.png), auto;
+  width: 5%;
+height: 10%;
+border: 1px solid black;
+left: 93%;
+bottom: 87%;
+position: absolute;
+cursor: url(../images/red_car_left_haut.png), auto;
+border-top-right-radius: 100%;
 }
+
 .corner-left {
     width: 7%;
     height: 12%;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     left: 0%;
-    bottom: 0%;
+    bottom: 1%;
     position: absolute;
     cursor: url(../images/red_car_right_ba.png), auto;
+    border-bottom-left-radius: 109%
 }
 .race {
   margin-left: 100px;
@@ -213,36 +220,36 @@ label {
 }
 
 .coins-haut-droite {
-    width: 5%;
-    height: 10%;
-    border: 1px solid black;
-    left: 98%;
-    bottom: 88%;
-    position: absolute;
-    cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
-    border-bottom-left-radius: 145%;
+  width: 5%;
+height: 10%;
+border: 1px solid black;
+left: 98%;
+bottom: 89%;
+position: absolute;
+cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
+border-bottom-left-radius: 145%;
 }
 
 .coins-haut-droite2 {
-    width: 5%;
-    height: 10%;
-    border: 1px solid black;
-    left: 96%;
-    bottom: 93%;
-    position: absolute;
-    cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
-    border-bottom-left-radius: 145%;
+  width: 5%;
+height: 10%;
+border: 1px solid black;
+left: 96%;
+bottom: 94%;
+position: absolute;
+cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
+border-bottom-left-radius: 145%
 }
 
 .coins-haut-droite3 {
-    width: 5%;
-    height: 10%;
-    border: 1px solid black;
-    left: 93%;
-    bottom: 96%;
-    position: absolute;
-    cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
-    border-bottom-left-radius: 145%;
+  width: 5%;
+height: 10%;
+border: 1px solid black;
+left: 93%;
+bottom: 98%;
+position: absolute;
+cursor: url(../images/red_car_left_haut_explosion_R.png), auto;
+border-bottom-left-radius: 145%;
 }
 
 .accdnt-haut {
@@ -311,13 +318,14 @@ label {
 }
 
 .accdnt-bas {
-    left: 7%;
-    bottom: -3%;
-    width: 87%;
-    height: 10%;
-    border: 1px solid black;
-    position: absolute;
-    cursor: url(../images/red_car_right_explosion_R.png), auto; 
+  left: 7%;
+bottom: -5%;
+width: 87%;
+height: 10%;
+border: 1px solid black;
+position: absolute;
+cursor: url(../images/red_car_right_explosion_R.png), auto;
+border-top-left-radius: 34%;
 }
 
 .coins-bas-gauche3 {
@@ -328,6 +336,16 @@ label {
     bottom: 0%;
     position: absolute;
     cursor: url(../images/red_car_right_ba.png), auto;
+}
+
+.coins-bas-droite {
+  width: 3%;
+height: 15%;
+border: 1px solid black;
+left: 96%;
+bottom: -2%;
+position: absolute;
+cursor: url(../images/red_car_right_trav_explosion_R.png), auto;
 }
 
 #image {
