@@ -19,12 +19,13 @@ var msgtxt = document.getElementById('txtmsg');
 
 });*/
 
-document.getElementById("life").innerHTML = "Life :"+life;
+document.getElementById("life").innerHTML = "Life : "+life;
+document.getElementById("score").innerHTML = "Score : "+score;
 
 for (var i = 0; i < area.length; i++) {
     area[i].addEventListener('mouseover',function(){
       life --;
-      document.getElementById("life").innerHTML = "Life :"+life;
+      document.getElementById("life").innerHTML = "Life : "+life;
       if (life === 0) {
         msg.style.display = "block";
         msgtxt.innerHTML = "TOO BAD ! The game is done. Your score is "+score+" !";

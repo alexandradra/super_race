@@ -18,6 +18,12 @@
   background-color: black;
   padding: 20px;
 }
+#life {
+  color: red;
+}
+#score {
+  color: yellow;
+}
 #msg {
   width: 40%;
   display: none;
