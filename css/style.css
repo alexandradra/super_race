@@ -13,10 +13,10 @@ label {
 }
 .road-bottom {
     left: 39%;
-    bottom: 0%;
+    bottom: 6%;
     width: 55%;
-    height: 15%;
-    /*border: 1px solid black;*/
+    height: 10%;
+    border: 1px solid black;
     position: absolute;
     cursor: url(../images/red_car_right.png), auto;
 }
@@ -134,10 +134,10 @@ label {
 
 .road-left-Btml {
     width: 12%;
-    height: 12%;
-    /*border: 1px solid black;*/
+    height: 8%;
+    border: 1px solid black;
     left: 7%;
-    bottom: 1px;
+    bottom: 19px;
     position: absolute;
     cursor: url(../images/red_car_right.png), auto;
 }
@@ -296,6 +296,38 @@ label {
     bottom: 12%;
     left: -4%;
     cursor: url(../images/red_car_bas_explosion_R.png), auto;
+}
+
+.coins-bas-gauche {
+    width: 7%;
+    height: 12%;
+    border: 1px solid black;
+    left: -1%;
+    bottom: -3%;
+    position: absolute;
+    cursor: url(../images/red_car_right_ba_explosion_R.png), auto;
+    border-top-right-radius: 145%;
+    z-index: 2;
+}
+
+.accdnt-bas {
+    left: 7%;
+    bottom: -3%;
+    width: 87%;
+    height: 10%;
+    border: 1px solid black;
+    position: absolute;
+    cursor: url(../images/red_car_right_explosion_R.png), auto; 
+}
+
+.coins-bas-gauche3 {
+    width: 7%;
+    height: 12%;
+    border: 1px solid black;
+    left: 0%;
+    bottom: 0%;
+    position: absolute;
+    cursor: url(../images/red_car_right_ba.png), auto;
 }
 
 #image {
