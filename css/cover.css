@@ -418,30 +418,14 @@ body {
 /*Media query for iPad*/
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+and (max-device-width : 1024px) {
+  body {
+    overflow: hidden;
+  }
   .modal-block {
       margin-top: 35%;
       width: 80%;
       z-index: 100;
-  }
-  .landscape-alert {
-    background-color: rgba(0, 0, 0, 0.97);
-  }
-  .landscape-alert, .landscape-alert-ctn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .landscape-alert-ctn {
-    width: 75%;
-    margin-top: 40%;
-  }
-  .landscape-icon {
-    width: 15%;
-  }
-  .landscape-txt {
-    color: white;
   }
   .inner.cover {
       padding-top: 25%;
@@ -493,33 +477,41 @@ and (orientation : portrait) {
       margin-top: 10%;
   }
 }
+/*Portrait only*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  body {
+    overflow: hidden;
+  }
+  .landscape-alert {
+    background-color: rgba(0, 0, 0, 0.97);
+  }
+  .landscape-alert, .landscape-alert-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landscape-alert-ctn {
+    width: 75%;
+    margin-top: 40%;
+  }
+  .landscape-icon {
+    width: 15%;
+  }
+  .landscape-txt {
+    color: white;
+  }
+}
 /*Media query for iPhone 6*/
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
+and (max-device-width : 667px) {
     .modal-block {
         margin-top: 35%;
         width: 80%;
         z-index: 100;
-    }
-    .landscape-alert {
-      background-color: rgba(0, 0, 0, 0.97);
-    }
-    .landscape-alert, .landscape-alert-ctn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .landscape-alert-ctn {
-      width: 75%;
-      margin-top: 40%;
-    }
-    .landscape-icon {
-      width: 15%;
-    }
-    .landscape-txt {
-      color: white;
     }
 
     .inner.cover {
@@ -567,5 +559,32 @@ and (orientation : portrait) {
     }
     .posrel {
         margin-top: 10%;
+    }
+}
+/*Portrait only*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    body {
+      overflow: hidden;
+    }
+    .landscape-alert {
+      background-color: rgba(0, 0, 0, 0.97);
+    }
+    .landscape-alert, .landscape-alert-ctn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .landscape-alert-ctn {
+      width: 75%;
+      margin-top: 40%;
+    }
+    .landscape-icon {
+      width: 15%;
+    }
+    .landscape-txt {
+      color: white;
     }
 }
