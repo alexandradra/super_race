@@ -24,7 +24,7 @@ body {
     /*background-image: url("../images/circuit_7.jpg");*/
     background-size: cover;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .game {
@@ -158,12 +158,13 @@ body {
 
 .background-fix {
     position: absolute;
-    left: 0;
+    left: -1%;
+    top: -1%;
     right: 0;
     z-index: 1;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 102%;
+    height: 102%;
     min-height: 100%;
     background-color: rgba(70, 70, 70, 0.4);
 }
@@ -391,6 +392,7 @@ body {
     z-index: 5;
 }
 
+
 .icon-github {
     font-size: 2em;
     color: black;
@@ -468,9 +470,6 @@ and (orientation : portrait) {
     height: 55%;
     width: 100%;
   }
-  .logo-link {
-    width: 15%;
-  }
   .logo {
     height:80%;
   }
@@ -497,6 +496,7 @@ and (orientation : portrait) {
       margin-top: 10%;
   }
 }
+/*Landscape only*/
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -584,10 +584,62 @@ and (orientation : portrait) {
         margin-top: 10%;
     }
 }
-
+/*Landscape only*/
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : landscape) {
+  .masthead {
+      height: 12%;
+      padding: 0;
+      font-size: 1.2em;
+  }
+  .masthead-brand {
+    font-size: 1.6em;
+    padding-left: 5%;
+  }
+  .brand, .nav.masthead-nav {
+    float: none;
+  }
+  .brand {
+    padding: 0;
+    float: none;
+  }
 
+  .logo {
+    height:100%;
+  }
+  .nav.masthead-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .masthead-nav>li>a {
+    padding-bottom: 5px;
+    font-size: 1em;
+  }
+  .cover-heading {
+    font-size: 1.5em;
+  }
+  .lead.btn-cont {
+    height: 20%;
+  }
+  .lead {
+    font-size: 1em;
+  }
+  .btn-cont {
+    padding: 0;
+  }
+  .start_btn {
+    width: 10%;
+    padding: 0;
+  }
+  .inner {
+    padding: 0;
+  }
+  .mastfoot .inner p {
+    font-size: 0.8em;
+  }
+  .icon-github {
+    font-size: 1.3em;
+  }
 }
