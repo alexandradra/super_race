@@ -416,6 +416,33 @@ body {
     transition-duration: 3s
 }
 /*Media query for iPad*/
+/*Portrait only*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  body {
+    overflow: hidden;
+  }
+  .landscape-alert {
+    background-color: rgba(0, 0, 0, 0.97);
+  }
+  .landscape-alert, .landscape-alert-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landscape-alert-ctn {
+    width: 75%;
+    margin-top: 40%;
+  }
+  .landscape-icon {
+    width: 15%;
+  }
+  .landscape-txt {
+    color: white;
+  }
+}
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
@@ -477,34 +504,36 @@ and (max-device-width : 1024px) {
       margin-top: 10%;
   }
 }
+
+/*Media query for iPhone 6*/
 /*Portrait only*/
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+and (min-device-width : 375px)
+and (max-device-width : 667px)
 and (orientation : portrait) {
-  body {
-    overflow: hidden;
-  }
-  .landscape-alert {
-    background-color: rgba(0, 0, 0, 0.97);
-  }
-  .landscape-alert, .landscape-alert-ctn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .landscape-alert-ctn {
-    width: 75%;
-    margin-top: 40%;
-  }
-  .landscape-icon {
-    width: 15%;
-  }
-  .landscape-txt {
-    color: white;
-  }
+    body {
+      overflow: hidden;
+    }
+    .landscape-alert {
+      background-color: rgba(0, 0, 0, 0.97);
+    }
+    .landscape-alert, .landscape-alert-ctn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .landscape-alert-ctn {
+      width: 75%;
+      margin-top: 40%;
+    }
+    .landscape-icon {
+      width: 15%;
+    }
+    .landscape-txt {
+      color: white;
+    }
 }
-/*Media query for iPhone 6*/
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
@@ -559,32 +588,5 @@ and (max-device-width : 667px) {
     }
     .posrel {
         margin-top: 10%;
-    }
-}
-/*Portrait only*/
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
-    body {
-      overflow: hidden;
-    }
-    .landscape-alert {
-      background-color: rgba(0, 0, 0, 0.97);
-    }
-    .landscape-alert, .landscape-alert-ctn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .landscape-alert-ctn {
-      width: 75%;
-      margin-top: 40%;
-    }
-    .landscape-icon {
-      width: 15%;
-    }
-    .landscape-txt {
-      color: white;
     }
 }
