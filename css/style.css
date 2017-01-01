@@ -8,11 +8,17 @@
     cursor: url(../images/red_car_left_haut_droit.png), auto;
     z-index: 2;
   }
-label {
+.score-table {
   z-index: 5;
+  position: absolute;
+  top:0;
+  left:10px;
+  text-align: left;
+  color : red;
+  background-color: black;
+  padding: 20px;
 }
 #msg {
-  z-index: 10;
   width: 40%;
   display: none;
   margin: 50% auto;
