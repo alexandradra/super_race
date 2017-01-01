@@ -1,9 +1,10 @@
-let count = 0;
+let score = 0;
 var carX = getPosition(document.getElementById("car")).x;
 var carY = getPosition(document.getElementById("car")).y;
 var area = document.getElementsByTagName('area');
 var life = 15;
-
+var msg = document.getElementById('msg');
+var msgtxt = document.getElementById('txtmsg');
 /*document.body.addEventListener("mouseover", function mouse_position()
 {
     var e = window.event;
@@ -25,17 +26,21 @@ for (var i = 0; i < area.length; i++) {
       life --;
       document.getElementById("life").innerHTML = "Life :"+life;
       if (life === 0) {
-        alert("You loose ! try again");
+        msg.style.display = "block";
+        msgtxt.innerHTML = "TOO BAD ! The game is done. Your score is "+score+" !";
         life = 15;
-        count = 0;
+        score = 0;
         document.getElementById("life").innerHTML = "Life :"+life;
       }
     },false);
 }
+document.getElementById("btn-msg-done").addEventListener("click", function (){
+msg.style.display = "none";
+});
 
 document.getElementById("div").addEventListener("mousemove", function(){
-  count ++;
-  document.getElementById('score').innerHTML = "Score : "+count;
+  score ++;
+  document.getElementById('score').innerHTML = "Score : "+score;
 });
 /*
 var car = document.getElementById("car");
