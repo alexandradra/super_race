@@ -9,19 +9,26 @@
     z-index: 2;
   }
 .score-table {
+  font-family: digital;
+  font-weight: bold;
+  font-size: 25px;
   z-index: 5;
   position: absolute;
   top:0;
   left:10px;
   text-align: left;
   color : red;
-  background-color: black;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 5px black;
 }
+
 #life {
+  background-color: black;
   color: red;
 }
 #score {
+  background-color: black;
   color: yellow;
 }
 #msg {
@@ -214,9 +221,6 @@
   margin-left: 100px;
 }
 
-#coord {
-
-}
 .posrel {
   position: relative;
 }

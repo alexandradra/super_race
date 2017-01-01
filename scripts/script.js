@@ -25,18 +25,19 @@ document.getElementById("score").innerHTML = "Score : "+score;
 for (var i = 0; i < area.length; i++) {
     area[i].addEventListener('mouseover',function(){
       life --;
-      document.getElementById("life").innerHTML = "Life : "+life;
+      document.getElementById("life").innerHTML = "Life : <span id='num-score'>"+life+"</span>";
       if (life === 0) {
         msg.style.display = "block";
         msgtxt.innerHTML = "TOO BAD ! The game is done. Your score is "+score+" !";
         life = 15;
         score = 0;
-        document.getElementById("life").innerHTML = "Life :"+life;
+        document.getElementById("life").innerHTML = "Life : <span id='num-life'>"+life+"</span>";
       }
     },false);
 }
 document.getElementById("btn-msg-done").addEventListener("click", function (){
 msg.style.display = "none";
+
 });
 
 document.getElementById("div").addEventListener("mousemove", function(){
