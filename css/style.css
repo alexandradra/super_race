@@ -19,16 +19,18 @@
   text-align: left;
   color : red;
   padding: 20px;
+  background-color: black;
   border-radius: 10px;
   box-shadow: 1px 1px 1px 5px black;
 }
-
+#num-score {
+}
+#num-life {
+}
 #life {
-  background-color: black;
   color: red;
 }
 #score {
-  background-color: black;
   color: yellow;
 }
 #msg {

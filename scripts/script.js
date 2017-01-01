@@ -2,7 +2,7 @@ let score = 0;
 var carX = getPosition(document.getElementById("car")).x;
 var carY = getPosition(document.getElementById("car")).y;
 var area = document.getElementsByTagName('area');
-var life = 15;
+var life = 5;
 var msg = document.getElementById('msg');
 var msgtxt = document.getElementById('txtmsg');
 /*document.body.addEventListener("mouseover", function mouse_position()
@@ -29,7 +29,7 @@ for (var i = 0; i < area.length; i++) {
       if (life === 0) {
         msg.style.display = "block";
         msgtxt.innerHTML = "TOO BAD ! The game is done. Your score is "+score+" !";
-        life = 15;
+        life = 5;
         score = 0;
         document.getElementById("life").innerHTML = "Life : <span id='num-life'>"+life+"</span>";
       }
