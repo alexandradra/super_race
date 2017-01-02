@@ -41,8 +41,9 @@ body {
     justify-content: center;
     padding-top: 10%;
 }
-.game header a, .game header nav a, .game header nav .active a, .game header nav .active a:hover {
-  color: yellow;
+.yellow-header div a, .yellow-header nav li a, .yellow-header nav .active a, .yellow-header nav .active a:hover
+ {
+  color: #E8E82D;
 }
 
 .race {
@@ -445,6 +446,9 @@ body {
     display: none;
   }
 }*/
+.grey-background {
+  background-color:#3f3e42;
+}
 
 /*Media query for iPad*/
 /*Portrait only*/

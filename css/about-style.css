@@ -1,0 +1,10 @@
+.about-ctn {
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+}
+.full-about {
+  background-image: url(../images/intro-full-width.jpg);
+  height: 80%;
+  background-size: cover;
+}
