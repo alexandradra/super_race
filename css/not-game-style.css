@@ -7,24 +7,33 @@ body {
 a, a:hover {
   color: black;
 }
-.mastfoot {
+.about-footer {
   position: absolute;
   bottom: -100%;
-  clear: both;
 }
-.about-ctn {
+.contact-footer {
+  position: absolute;
+  bottom: -40%;
+}
+.full-width-ctn {
   width: 100%;
   height: 100%;
   padding-top: 5%;
 }
-.full-about {
-  background-image: url(../images/intro-full-width.jpg);
-  height: 80%;
+.full-about, .full-contact {
   background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.full-about {
+  background-image: url(../images/intro-full-width.jpg);
+  height: 80%;
+}
+.full-contact {
+  background-image: url(../images/full-contact.jpg);
+  height: 50%;
 }
 .motto-ctn {
 }
@@ -42,6 +51,7 @@ a, a:hover {
 }
 .about-desc h3 {
   font-size: 2.1em;
+  font-weight: bold;
 }
 .about-desc h4 {
   font-size: 1.875em;
@@ -52,6 +62,19 @@ a, a:hover {
   font-size: 1.3em;
   text-align: justify;
 }
+.form-horizontal {
+  margin: 3%;
+}
+.contact-intro h4, .contact-intro p {
+  text-align: left;
+  padding-left: 19%;
+  color: #2D2C2F;
+  text-shadow: none;
+}
+.contact-intro h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
 .code-zone {
   font-family: code;
   background-color: #292D30;
@@ -61,6 +84,8 @@ a, a:hover {
 .code-red {
   color: #FF747A;
 }
+
+
 /*Media query for iPhone 6*/
 /*Portrait only*/
 @media only screen
@@ -68,7 +93,11 @@ and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
   .full-about {
-    url(../images/intro-full-width-small.jpg);
+    background-image: url(../images/intro-full-width-small.jpg);
+    height: 40%;
+  }
+  .full-contact {
+    background-image: url(../images/full-contact-small.jpg);
     height: 40%;
   }
   .motto-ctn p {
@@ -79,9 +108,16 @@ and (orientation : portrait) {
   .about-desc {
     padding: 5%;
   }
-  .mastfoot {
+  .contact-intro h4, .contact-intro p {
+    text-align: center;
+    padding: 2%;
+  }
+  .about-footer {
     position: absolute;
     bottom: -130%;
-    clear: both;
+  }
+  .contact-footer {
+    position: absolute;
+    bottom: -35%;
   }
 }
