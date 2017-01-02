@@ -14,16 +14,27 @@
 
 .score-table {
     font-family: digital;
-    font-size: 25px;
+    font-size: 2em;
     z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 10px;
     text-align: left;
     color: red;
-    padding: 20px;
     background-color: black;
     border-radius: 10px;
+    width: 14%;
+}
+#txtmsg {
+  text-shadow: none;
+  font-size: 1.5em;
+  color: black;
+}
+.gif {
+  width: 100%;
+  margin-top: 0;
+}
+.gif img {
+  width: 98%;
+  box-sizing: border-box;
+  margin-right: 3%;
 }
 
 #touch {

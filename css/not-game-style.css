@@ -9,11 +9,11 @@ a, a:hover {
 }
 .about-footer {
   position: absolute;
-  bottom: -100%;
+  bottom: -180%;
 }
 .contact-footer {
   position: absolute;
-  bottom: -40%;
+  bottom: -60%;
 }
 .full-width-ctn {
   width: 100%;
