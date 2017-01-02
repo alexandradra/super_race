@@ -1,3 +1,17 @@
+body {
+  overflow: auto !important;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+a, a:hover {
+  color: black;
+}
+.mastfoot {
+  position: absolute;
+  bottom: -100%;
+  clear: both;
+}
 .about-ctn {
   width: 100%;
   height: 100%;
@@ -7,4 +21,29 @@
   background-image: url(../images/intro-full-width.jpg);
   height: 80%;
   background-size: cover;
+}
+.about-desc {
+  padding: 3% 20% 3% 20%;
+  text-shadow: none;
+}
+.about-desc h3 {
+  font-size: 2.1em;
+}
+.about-desc h4 {
+  font-size: 1.875em;
+  padding-bottom: 15px;
+}
+.about-desc p {
+  margin-top: 15px;
+  font-size: 1.3em;
+  text-align: left;
+}
+.code-zone {
+  font-family: code;
+  background-color: #292D30;
+  color:white;
+  font-size: 0.8em;
+}
+.code-red {
+  color: #FF747A;
 }
