@@ -595,7 +595,7 @@ and (orientation : portrait) {
         padding: 0;
     }
     .start_btn {
-      height: 70%;
+      height: 50%;
     }
     .rules {
         display: none;
