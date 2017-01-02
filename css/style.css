@@ -85,11 +85,11 @@
 }
 
 .road-right-topr {
-    width: 59%;
-    height: 22%;
+    width: 23%;
+    height: 9%;
     /*border: 1px solid black;*/
-    left: 36%;
-    bottom: 77%;
+    left: 72%;
+    bottom: 90%;
     position: absolute;
     cursor: url(../images/red_car_left.png) 12 12, auto;
 }
@@ -476,4 +476,48 @@
 }
 map {
   z-index: 1;
+}
+
+.lamp1 {
+  width: 25%;
+    height: 8%;
+    /* border: 1px solid black; */
+    left: 67%;
+    bottom: 36%;
+    position: absolute;
+    cursor: url(../images/red_car_left.png)12 12, auto;
+    transform: rotate(-9deg);
+}
+
+.lamp2 {
+  width: 12%;
+    height: 8%;
+    /* border: 1px solid black; */
+    left: 56%;
+    bottom: 35%;
+    position: absolute;
+    cursor: url(../images/red_car_left.png)12 12, auto;
+    transform: rotate(15deg);
+}
+
+.road-right-topr2 {
+  width: 23%;
+  height: 5%;
+  /*border: 1px solid black;*/
+  left: 55%;
+  bottom: 85%;
+  position: absolute;
+  cursor: url(../images/red_car_left.png) 12 12, auto;
+  transform: rotate(-11deg);
+}
+
+.road-right-topr3 {
+  width: 23%;
+  height: 3%;
+  /*border: 1px solid black;*/
+  left: 34%;
+  bottom: 81%;
+  position: absolute;
+  cursor: url(../images/red_car_left.png) 12 12, auto;
+  transform: rotate(0deg);
 }
