@@ -532,3 +532,14 @@ map {
   cursor: url(../images/red_car_right_bas.png)12 12, auto;
   transform: rotate(60deg);
 }
+
+.milieu {
+  width: 3%;
+    height: 8%;
+    /* border: 1px solid black; */
+    left: 91%;
+    bottom: 39%;
+    position: absolute;
+    cursor: url(../images/red_car_left_haut.png)12 12, auto;
+    transform: rotate(0deg);
+}
