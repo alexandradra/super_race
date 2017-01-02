@@ -8,8 +8,41 @@
     cursor: url(../images/red_car_left_haut_droit.png), auto;
     z-index: 2;
   }
-label {
-  z-index: 10;
+.score-table {
+  font-family: digital;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 5;
+  position: absolute;
+  top:0;
+  left:10px;
+  text-align: left;
+  color : red;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 5px black;
+}
+#touch {
+  background: red;
+  transition: 2s;
+  height: 100vh;
+  width: 100vw;
+}
+#num-score {
+}
+#num-life {
+}
+#life {
+  color: red;
+}
+#score {
+  color: yellow;
+}
+#msg {
+  width: 40%;
+  display: none;
+  margin: 50% auto;
 }
 .road-bottom {
     left: 39%;
@@ -196,9 +229,6 @@ label {
   margin-left: 100px;
 }
 
-#coord {
-
-}
 .posrel {
   position: relative;
 }
