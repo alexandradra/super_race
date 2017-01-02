@@ -521,3 +521,14 @@ map {
   cursor: url(../images/red_car_left.png) 12 12, auto;
   transform: rotate(0deg);
 }
+
+.blok {
+  left: 33%;
+  bottom: 67%;
+  width: 5%;
+  height: 14%;
+  /*border: 1px solid black;*/
+  position: absolute;
+  cursor: url(../images/red_car_right_bas.png)12 12, auto;
+  transform: rotate(60deg);
+}
