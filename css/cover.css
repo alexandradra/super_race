@@ -153,17 +153,18 @@ body {
 }
 
 .alex {
-    height: 100%;
+    height: 100vh;
 }
 
 .background-fix {
     position: absolute;
-    left: 0;
+    left: -1%;
+    top: -1%;
     right: 0;
     z-index: 1;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 102%;
+    height: 102%;
     min-height: 100%;
     background-color: rgba(70, 70, 70, 0.4);
 }
@@ -222,7 +223,6 @@ body {
 }
 
 .modal-layer {
-    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -231,9 +231,14 @@ body {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
-.modal-layer:target {
+.alert-modal, .landscape-alert {
+  display: none;
+}
+
+.alert-modal:target {
     display: block;
 }
 
@@ -302,7 +307,7 @@ body {
     padding-bottom: 5px;
     font-family: faster;
     font-size: 1.5em;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 11%;
@@ -353,6 +358,7 @@ body {
     border-bottom: 3px solid transparent;
     color: black;
     font-size: 1em;
+    padding-top: 5px !important;
 }
 
 .masthead-nav>li>a:hover, .masthead-nav>li>a:focus {
@@ -383,7 +389,9 @@ body {
     position: fixed;
     bottom: 0;
     color: rgb(218, 41, 28);
+    z-index: 5;
 }
+
 
 .icon-github {
     font-size: 2em;
@@ -409,13 +417,146 @@ body {
     transform: translateX(5000px);
     transition-duration: 3s
 }
+/*Media query for iPad*/
+/*Portrait only*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  body {
+    overflow-x: hidden;
+  }
+  .landscape-alert {
+    background-color: rgba(0, 0, 0, 0.97);
+  }
+  .landscape-alert, .landscape-alert-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landscape-alert-ctn {
+    width: 75%;
+    margin-top: 40%;
+  }
+  .landscape-icon {
+    width: 15%;
+  }
+  .landscape-txt {
+    color: white;
+  }
+  .modal-block {
+      margin-top: 35%;
+      width: 80%;
+      z-index: 99;
+  }
+  .inner.cover {
+      padding-top: 25%;
+  }
+  .cover-heading {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+  }
+  .lead {
+      line-height: 1.3em;
+  }
+  .masthead {
+      height: 17%;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      vertical-align: middle;
+  }
+  .brand {
+    height: 55%;
+    width: 100%;
+  }
+  .logo {
+    height:80%;
+  }
+  .masthead-brand {
+      font-size: 2.5em;
+      margin-right: 12%;
+  }
+  .nav.masthead-nav {
+      width: 100%;
+      margin: 0 auto 5px auto;
+      padding: 0;
+  }
+  .nav.masthead-nav li a {
+      padding: 0;
+  }
+  .start_btn {
+    height: 70%;
+  }
+  .modal-head h3 {
+    font-size: 1.7em;
+  }
+  .modal-cont {
+    padding: 15px 10px 0 10px;
+  }
+  .modal-cont p, .modal-foot a {
+    font-size: 1.2em;
+  }
+  .rules {
+      display: none;
+  }
+  .posrel {
+      margin-top: 10%;
+  }
+}
+/*Landscape only*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .start_btn {
+    height: 70%;
+  }
+  .modal-head h3 {
+    font-size: 1.7em;
+  }
+  .modal-cont {
+    padding: 15px 10px 0 10px;
+  }
+  .modal-cont p, .modal-foot a {
+    font-size: 1.2em;
+  }
 
-@media screen and (max-width: 680px) {
+}
+
+/*Media query for iPhone 6*/
+/*Portrait only*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    body {
+      overflow-x: hidden;
+    }
+    .landscape-alert {
+      background-color: rgba(0, 0, 0, 0.97);
+    }
+    .landscape-alert, .landscape-alert-ctn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .landscape-alert-ctn {
+      width: 75%;
+      margin-top: 40%;
+    }
+    .landscape-icon {
+      width: 15%;
+    }
+    .landscape-txt {
+      color: white;
+    }
     .modal-block {
         margin-top: 35%;
         width: 80%;
-        z-index: 100;
+        z-index: 99;
     }
+
     .inner.cover {
         padding-top: 25%;
     }
@@ -462,4 +603,76 @@ body {
     .posrel {
         margin-top: 10%;
     }
+}
+/*Landscape only*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  .masthead {
+      height: 12%;
+      padding: 0;
+      font-size: 1.2em;
+  }
+  .masthead-brand {
+    font-size: 1.6em;
+    padding-left: 5%;
+  }
+  .brand, .nav.masthead-nav {
+    float: none;
+  }
+  .brand {
+    padding: 0;
+    float: none;
+  }
+
+  .logo {
+    height:100%;
+  }
+  .nav.masthead-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .masthead-nav>li>a {
+    padding-bottom: 5px;
+    font-size: 1em;
+  }
+  .cover-heading {
+    font-size: 1.5em;
+  }
+  .lead.btn-cont {
+    height: 20%;
+  }
+  .lead {
+    font-size: 1em;
+  }
+  .btn-cont {
+    padding: 0;
+  }
+  .start_btn {
+    width: 10%;
+    padding: 0;
+  }
+  .inner {
+    padding: 0;
+  }
+  .mastfoot .inner p {
+    font-size: 0.8em;
+  }
+  .icon-github {
+    font-size: 1.3em;
+  }
+  .modal-block {
+    margin: 12.3% auto 0 auto;
+    width: 60%;
+  }
+  .modal-head h3 {
+    font-size: 1.3em;
+  }
+  .modal-cont {
+    padding: 15px 10px 0 10px;
+  }
+  .modal-cont p, .modal-foot a {
+    font-size: 0.9em;
+  }
 }
