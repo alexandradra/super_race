@@ -23,6 +23,12 @@
   border-radius: 10px;
   box-shadow: 1px 1px 1px 5px black;
 }
+#touch {
+  background: red;
+  transition: 2s;
+  height: 100vh;
+  width: 100vw;
+}
 #num-score {
 }
 #num-life {
