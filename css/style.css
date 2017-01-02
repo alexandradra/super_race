@@ -81,6 +81,7 @@
     bottom: 534px;
     position: absolute;
     cursor: url(../images/red_car_left_bas.png), auto;
+    display: none;
 }
 
 .road-right-topr {
@@ -134,7 +135,7 @@
     cursor: url(../images/red_car_left.png), auto;
 }
 
-.road-left-topl-corner {
+.road-left-topl-corner {/*ne pas toucher*/
     /*
     width: 308px;
     heigh*/
@@ -154,7 +155,7 @@
     bottom: 89%;
     position: absolute;
     cursor: url(../images/red_car_left_bas.png), auto;
-    border-top-left-radius: 100%;
+    border-top-left-radius: 93%;
 }
 
 .road-left {
@@ -173,8 +174,9 @@
     /*border: 1px solid black;*/
     left: 0px;
     bottom: 10px;
-    images/ position: absolute;
+   position: absolute;
     cursor: url(''), auto;
+    display: none;
 }
 
 .road-left-Btml {
@@ -221,14 +223,14 @@
 }
 
 .corner-right {
-    width: 5%;
+    width: 6%;
     height: 10%;
     /*border: 1px solid black;*/
     left: 93%;
     bottom: 87%;
     position: absolute;
     cursor: url(../images/red_car_left_haut.png), auto;
-    border-top-right-radius: 100%;
+    border-top-right-radius: 54%;
 }
 
 .corner-left {
@@ -463,7 +465,14 @@
     transform: rotate(60deg);
 }
 
+.boom {
+  cursor: url(../images/red_car_left_explosion.png), auto;
+  z-index: 1
+}
 #image {
     width: 100%;
     height: 100%;
+}
+map {
+  z-index: 1;
 }
