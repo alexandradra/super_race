@@ -2,7 +2,7 @@
   border: 1px solid yellow;
 }
 .road-right {
-    width: 7%;
+    width: 5%;
     height: 75%;
     position: absolute;
     /*border: 1px solid black;*/
@@ -86,7 +86,7 @@
 
 .road-right-topr {
     width: 59%;
-    height: 26%;
+    height: 24%;
     /*border: 1px solid black;*/
     left: 36%;
     bottom: 77%;
@@ -96,7 +96,7 @@
 
 .road-left-topl {
     width: 29%;
-    height: 14%;
+    height: 12%;
     /*border: 1px solid black;*/
     left: 7%;
     bottom: 89%;
@@ -159,7 +159,7 @@
 }
 
 .road-left {
-    width: 8%;
+    width: 6%;
     height: 77%;
     position: absolute;
     /*border: 1px solid black;*/
@@ -181,10 +181,10 @@
 
 .road-left-Btml {
     width: 12%;
-    height: 8%;
+    height: 5%;
     /*border: 1px solid black;*/
     left: 7%;
-    bottom: 19px;
+    bottom: 39px;
     position: absolute;
     cursor: url(../images/red_car_right.png), auto;
 }
@@ -403,10 +403,10 @@
 }
 
 .RGauche-dir {
-    width: 3%;
+    width: 5%;
     height: 13%;
     /*border: 1px solid black;*/
-    left: 7%;
+    left: 5%;
     bottom: 36%;
     position: absolute;
     cursor: url(../images/red_car_right_ba.png), auto;
