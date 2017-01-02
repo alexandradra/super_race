@@ -127,12 +127,16 @@ body {
     white-space: nowrap;
     padding-left: 10px;
 }
-.posrel {
+.posrel, .game-ctn {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+.posrel {
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  background-color: black;
+  padding-top: 3px;
 }
 .game-ctn {
   width: 1020px;
