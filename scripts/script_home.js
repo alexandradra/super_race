@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",
           document.querySelectorAll(".zou")[1].classList.toggle("slider");
         });
     });
+
 //classlist = pour ajouter ou supprimer classes
 // document.addEventListener("DOMContentLoaded",
 //     function() {
