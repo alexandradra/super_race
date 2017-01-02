@@ -25,6 +25,7 @@ document.getElementById("score").innerHTML = "Score : "+score;
 for (var i = 0; i < area.length; i++) {
     area[i].addEventListener('mouseover',function(){
       life --;
+      this.style.cursor = "url(images/red_car_left_explosion.png)12 12, auto";
       document.getElementById("life").innerHTML = "Life : <span id='num-score'>"+life+"</span>";
       if (life === 0) {
         msg.style.display = "block";
