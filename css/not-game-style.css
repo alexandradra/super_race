@@ -117,7 +117,7 @@ and (orientation : portrait) {
   }
   .about-footer {
     position: absolute;
-    bottom: -130%;
+    bottom: -170%;
   }
   .contact-footer {
     position: absolute;
