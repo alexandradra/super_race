@@ -54,7 +54,7 @@ body {
   position: absolute;
   top: 10%;
   table-layout: fixed;
-  width: 600%;
+  width: 100%;
   background-color: black;
   color: orange;
   margin-top: 5px;
@@ -65,11 +65,11 @@ body {
     font-family: digital;
     font-size: 1.2em;
     display: block;
-    -webkit-animation: linear slidingrules 70s infinite;
-    -moz-animation: linear slidingrules 70s infinite;
-    -o-animation: linear slidingrules 70s infinite;
-    -ms-animation: linear slidingrules 70s infinite;
-    animation: linear slidingrules 70s infinite;
+    -webkit-animation: linear slidingrules 20s infinite;
+    -moz-animation: linear slidingrules 20s infinite;
+    -o-animation: linear slidingrules 20s infinite;
+    -ms-animation: linear slidingrules 20s infinite;
+    animation: linear slidingrules 20s infinite;
     margin-left: -100%;
     padding: 0;
     text-align: left;
@@ -133,6 +133,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.game-ctn {
+  width: 1020px;
+  height:550px;
+}
+#image {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
 }
 
 
