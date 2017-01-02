@@ -2,7 +2,7 @@ let score = 0;
 var carX = getPosition(document.getElementById("car")).x;
 var carY = getPosition(document.getElementById("car")).y;
 var area = document.getElementsByTagName('area');
-var life = 5;
+var life = 20000; //LIGNE A MODIFIER ABSOLUMENT REMETTRE A 5
 var msg = document.getElementById('msg');
 var msgtxt = document.getElementById('txtmsg');
 /*document.body.addEventListener("mouseover", function mouse_position()
