@@ -1,0 +1,87 @@
+body {
+  overflow: auto !important;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+a, a:hover {
+  color: black;
+}
+.mastfoot {
+  position: absolute;
+  bottom: -100%;
+  clear: both;
+}
+.about-ctn {
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+}
+.full-about {
+  background-image: url(../images/intro-full-width.jpg);
+  height: 80%;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.motto-ctn {
+}
+.motto-ctn p {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+}
+.about-desc {
+  padding: 3% 20% 3% 20%;
+  text-shadow: none;
+}
+.about-desc>* {
+  color: #2D2C2F;
+}
+.about-desc h3 {
+  font-size: 2.1em;
+}
+.about-desc h4 {
+  font-size: 1.875em;
+  padding-bottom: 15px;
+}
+.about-desc p {
+  margin-top: 15px;
+  font-size: 1.3em;
+  text-align: justify;
+}
+.code-zone {
+  font-family: code;
+  background-color: #292D30;
+  color:white;
+  font-size: 0.8em;
+}
+.code-red {
+  color: #FF747A;
+}
+/*Media query for iPhone 6*/
+/*Portrait only*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .full-about {
+    url(../images/intro-full-width-small.jpg);
+    height: 40%;
+  }
+  .motto-ctn p {
+    font-size: 2em;
+    margin-top: 25%;
+    padding: 10px;
+  }
+  .about-desc {
+    padding: 5%;
+  }
+  .mastfoot {
+    position: absolute;
+    bottom: -130%;
+    clear: both;
+  }
+}

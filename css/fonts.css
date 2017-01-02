@@ -18,3 +18,7 @@
     font-family: 'digital';
     src: url('../fonts/digital-7.ttf');
 }
+@font-face {
+    font-family: 'code';
+    src: url('../fonts/SourceCodePro-Regular.ttf');
+}

@@ -22,112 +22,6 @@
 </head>
 
 <body>
-    <div class="game">
-      <div id="msg" class="alert alert-dismissable alert-success">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <p id="txtmsg"></p><br>
-            <button id="btn-msg-done" class="btn btn-success">Try again</button>
-            <a href="index.html" class="btn btn-danger">Go home</a>
-      </div>
-        <header class="masthead clearfix ">
-            <div class="brand">
-                <a class="logo-link" href="index.html">
-                    <img class="logo" src="images/logo_white.png" alt="Awesome logo!" /></a>
-                <h1 class="masthead-brand"><a href="index.html">Super Race !</a></h1>
-            </div>
-            <nav>
-                <ul class="nav masthead-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Game</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="modal-layer landscape-alert">
-            <div class="landscape-alert-ctn">
-                <div class="landscape-icon">
-                    <img src="images/noun_288993_cc.svg" alt="Landscape mode © Smartphone landscape by Oliviu Stoian from the Noun Project">
-                </div>
-                <div class="landscape-txt">
-                  <h3>Please switch your device on landscape mode</h3>
-                  <p>You have to be on landscape mode to play super-race on mobile or tablet</p>
-                </div>
-            </div>
-        </div>
-        <div class="rules" data-text="Please stay on the road - Don't loose points - Keep our cats alive - Please stay on the road - Don't loose points - Keep our city safe : don't drink and drive ! - Please stay on the road - Don't loose points - Toy Cars only - Please stay on the road - Don't loose points - Please fasten your seatbelt - Please stay on the road - Don't loose points - Web Devs look so good !! - Please stay on the road - Don't loose points - 1 line : DANGER / 2 lines : SAFETY - Please stay on the road - Don't loose points - Don't you know pump it up ? - Please stay on the road - Don't loose points - You've got to pump it up ! - Please stay on the road - Don't loose points - Feeling tired ? Have a nap ! - Please stay on the road - Don't loose points - Have a look on our ducks on the lake ! - Please stay on the road - Don't loose points ">
-            <p class="defile">Please stay on the road - Don't loose points - Keep our cats alive - Please stay on the road - Don't loose points - Keep our city safe : don't drink and drive ! - Please stay on the road - Don't loose points - Toy Cars only - Please stay on
-                the road - Don't loose points - Please fasten your seatbelt - Please stay on the road - Don't loose points - Web Devs look so good !! - Please stay on the road - Don't loose points - 1 line : DANGER / 2 lines : SAFETY - Please stay on
-                the road - Don't loose points - Don't you know pump it up ? - Please stay on the road - Don't loose points - You've got to pump it up ! - Please stay on the road - Don't loose points - Feeling tired ? Have a nap ! - Please stay on the
-                road - Don't loose points - Have a look on our ducks on the lake ! - Please stay on the road - Don't loose points</p>
-        </div>
-        <!--coord en commentaire car attente style compteurs. Alex
-        <label id="coord">Coordonnées :</label>-->
-
-        <div class="posrel">
-          <div class="score-table">
-            <span id="life">Life :</span><br>
-            <span id="score">Score :</span>
-          </div>
-            <div class="posrel game-ctn">
-              <img id="image" src="http://www.image-maps.com/m/private/78367/86616-8e4jm0vnefnaurptg282tomn60_circuit.png" border="0" width="1020" height="550" orgWidth="1020" orgHeight="550" usemap="#image-maps-2016-12-10-105105" alt="" />
-              <div id="div">
-                <div class="road-right"></div>
-                <div class="road-bottom"></div>
-                <div class="road-right-Btmr-corner"></div>
-                <div class="road-right-topr-corner"></div><!--ne pas supprimer sinon position bug-->
-                <div class="road-right-topr"></div>
-                <div class="road-left-topl"></div>
-                <div class="middle-top"></div>
-                <div class="middle-road"></div>
-                <div class="middle-bottom"></div>
-                <div class="road-left-topl-corner"></div>
-                <div class="road-left"></div>
-                <div class="road-left-Btml-corner"></div><!-- ne pas supprimer aussi sinon position bug-->
-                <div class="road-left-Btml"></div>
-                <div class="trav1"></div>
-                <div class="dir"></div>
-                <div class="trav2"></div>
-                <div class="corner-right"></div>
-                <div class="corner-left"></div>
-                <div class="coins-haut-droite"></div>
-                <div class="coins-haut-droite2"></div>
-                <div class="coins-haut-droite3"></div>
-                <div class="accdnt-haut"></div>
-                <div class="coins-haut-gauche"></div>
-                <div class="coins-haut-gauche2"></div>
-                <div class="coins-haut-gauche3"></div>
-                <div class="accdnt-gauche"></div>
-                <div class="coins-bas-gauche"></div>
-                <div class="accdnt-bas"></div>
-                <div class="coins-bas-droite"></div>
-                <div class="RGauche"></div>
-                <div class="RGauche-dir"></div>
-                <div class="accdnt-RGauche"></div>
-                <div class="accdnt-RGauche-bas"></div>
-                <div class="accdnt-RDroite-haut"></div>
-                <div class="accdnt-RDroite-bas"></div>
-                <div class="accdnt-RpG"></div>
-              </div>
-            </div>
-
-          <!--</div>-->
-        </div>
-        </div><!-- id="div"-->
-
-
-        </div>
-        <map name="image-maps-2016-12-10-105105" id="map">
-          <area shape="rect" coords="1018,548,1020,550" alt="Image Map" style="outline:none;" title="Image Map" />
-          <area  alt="" title="" shape="poly" coords="956,68,959,294,890,299,814,320,748,328,670,327,617,314,589,292,583,267,558,245,526,233,495,231,463,235,445,242,373,122,421,116,466,115,490,111,506,102,518,106,536,107,550,107,569,104,587,100,613,97,655,92,683,85,710,82,734,82,786,62,824,51,871,49,916,49,941,55" style="outline:none;" target="_self"     />
-          <area  alt="" title="" shape="poly" coords="812,2,727,53,693,57,662,69,635,70,628,67,608,69,589,73,579,81,560,87,527,89,486,93,441,94,395,92,365,86,349,75,324,32,304,17,284,11,277,7,276,0" style="outline:none;" target="_self"     />
-          <area  alt="" title="" shape="poly" coords="957,346,958,468,950,487,930,497,904,499,463,499,317,458,326,443,362,420,385,409,397,401,396,383,440,344,450,342,525,361,549,357,593,355,638,366,672,366,683,357,701,359,718,352,731,348,749,341,761,349,783,368,810,326,842,327,858,321,875,328,893,338,941,342" style="outline:none;" target="_self"     />
-          <area  alt="" title="" shape="poly" coords="410,292,291,94,290,72,278,53,259,49,208,49,198,31,192,24,179,23,163,24,153,28,134,38,118,42,108,49,79,54,64,68,62,78,64,281,109,304,170,313,246,315,326,315,397,308,408,302" style="outline:none;" target="_self"     />
-          <area  alt="" title="" shape="poly" coords="433,343,321,357,256,359,253,346,231,337,197,330,121,314,63,356,62,477,85,495,161,497,206,486,295,403,355,372,431,355" style="outline:none;" target="_self" />
-          <area  alt="" title="" shape="poly" coords="807,1,968,14,1010,51,1018,88,1017,477,1013,498,1007,510,1000,520,983,529,960,539,441,541,316,508,316,490,269,477,243,502,241,514,234,516,223,524,200,533,179,538,133,542,65,540,34,527,15,512,7,486,3,480,4,65,7,53,12,39,17,29,31,20,46,12,66,9,281,7,281,0,1,1,0,542,1019,547,1019,1" style="outline:none;" target="_self"     />
-          <area  alt="" title="" shape="poly" coords="499,256,486,259,476,266,469,276,466,289,469,302,476,312,486,319,499,322,512,319,522,312,529,302,532,289,529,276,522,266,512,259" style="outline:none;" target="_self" />
-</map>
-    </div>
     <div class="alex">
         <div class="background-fix zou">
             <div class="full-width-bckgrnd"></div>
@@ -144,7 +38,7 @@
                     <ul class="nav masthead-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Game</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="about.html">About us</a></li>
                         <li class="active"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
