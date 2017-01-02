@@ -21,10 +21,24 @@ a, a:hover {
   background-image: url(../images/intro-full-width.jpg);
   height: 80%;
   background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.motto-ctn {
+}
+.motto-ctn p {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
 }
 .about-desc {
   padding: 3% 20% 3% 20%;
   text-shadow: none;
+}
+.about-desc>* {
+  color: #2D2C2F;
 }
 .about-desc h3 {
   font-size: 2.1em;
@@ -36,7 +50,7 @@ a, a:hover {
 .about-desc p {
   margin-top: 15px;
   font-size: 1.3em;
-  text-align: left;
+  text-align: justify;
 }
 .code-zone {
   font-family: code;
@@ -46,4 +60,28 @@ a, a:hover {
 }
 .code-red {
   color: #FF747A;
+}
+/*Media query for iPhone 6*/
+/*Portrait only*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  .full-about {
+    url(../images/intro-full-width-small.jpg);
+    height: 40%;
+  }
+  .motto-ctn p {
+    font-size: 2em;
+    margin-top: 25%;
+    padding: 10px;
+  }
+  .about-desc {
+    padding: 5%;
+  }
+  .mastfoot {
+    position: absolute;
+    bottom: -130%;
+    clear: both;
+  }
 }
