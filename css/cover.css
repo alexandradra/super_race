@@ -253,6 +253,14 @@ body {
 .alert-modal, .landscape-alert {
   display: none;
 }
+.go-back, .go-back:hover, .go-back:visited, .go-back:link {
+  color: red;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+  border-radius: 2px;
+  display: block;
+}
 
 .alert-modal:target {
     display: block;
@@ -544,6 +552,7 @@ and (orientation : landscape) {
   body, html {
     overflow-y: hidden;
   }
+
   .start_btn {
     height: 70%;
   }
